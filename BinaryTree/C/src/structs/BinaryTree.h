@@ -7,7 +7,7 @@ typedef struct BinaryTree {
     TreeNode* root; // Raiz da árvore
     
     void (*insert)(struct BinaryTree*, int);
-    void (*insertNode)(TreeNode**, int);
+    // void (*insertNode)(TreeNode**, int);
     TreeNode* (*getRoot)(struct BinaryTree*);
 } BinaryTree;
 

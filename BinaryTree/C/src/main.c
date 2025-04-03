@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "./structs/BinaryTree.h"
+#include "./structs/BinaryPrinter.h"
 
 int main() {
     BinaryTree* tree = CreateBinaryTree();
@@ -11,6 +12,10 @@ int main() {
     if (root != NULL) {
         printf("Root Value: %d\n", root->value);
     }
+
+    printf("In-order traversal: ");
+    PrintInOrderTraversal(tree->root);
+    printf("\n");
 
     FreeMemory(tree);
     return 0;
