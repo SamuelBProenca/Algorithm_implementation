@@ -4,14 +4,13 @@
 #include "TreeNode.h"
 
 typedef struct BinaryTree {
-    TreeNode* root; // Raiz da árvore
-    
+    TreeNode* root;
+
     void (*insert)(struct BinaryTree*, int);
-    // void (*insertNode)(TreeNode**, int);
     TreeNode* (*getRoot)(struct BinaryTree*);
 } BinaryTree;
 
-// Funções relacionadas à BinaryTree
+// Funções
 BinaryTree* CreateBinaryTree();
 void FreeTreeNodes(TreeNode* node);
 void FreeMemory(BinaryTree* tree);
